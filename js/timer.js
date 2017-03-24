@@ -17,6 +17,7 @@ class Time {
         const minutes = Math.floor(this._seconds / 60) % 60;
         const hours = Math.floor(this._seconds / 60 / 60);
 
+        // TODO(ecf05332-8d12-4763-9bd1-7493d56026ea): render time with leading zeros
         return hours + ':' + minutes + ':' + seconds;
     }
 
@@ -80,6 +81,7 @@ class TsodingTimer {
 }
 
 $(() => {
+    // TODO(a112458f-0378-4f54-935d-821ae2bf29f0): make a separate class for Timer Box
     new TsodingTimer("#timer-box",
                      new TimerLine(decodeURIComponent(urlParam('timer-line'))))
         .start();

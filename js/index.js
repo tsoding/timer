@@ -5,4 +5,5 @@ $(() => {
                     "width=800,height=600");
         e.preventDefault();
     });
+    $('#timer-line').focus();
 });
